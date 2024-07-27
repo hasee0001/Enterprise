@@ -1,0 +1,484 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - ola
+      - greetings
+      - what's up
+      - howdy
+      - hi there
+      - nice to meet you
+      - pleasure to meet you
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - by
+      - tata
+      - take care
+      - see you soon
+      - until next time
+      - I'm off
+      - later
+      - have a good one
+      - peace out
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - obvious
+      - definitely
+      - absolutely
+      - sure
+      - yeah
+      - yup
+      - exactly
+      - that's right
+      - totally
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - absolutely not
+      - no thanks
+      - nope
+      - nah
+      - negative
+      - not at all
+      - I disagree
+      - I don't want to
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - fantastic
+      - I'm on top of the world
+      - couldn't be better
+      - I'm thrilled
+      - I'm ecstatic
+      - I'm delighted
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremely sad
+      - so saad
+      - so sad
+      - I'm feeling down
+      - I'm depressed
+      - I'm upset
+      - I'm not feeling well
+      - I'm miserable
+      - I'm in a bad mood
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - are you real?
+      - are you an AI?
+      - are you a computer program?
+      - is this a bot?
+      - are you a machine?
+      - are you an automated system?
+      - are you artificial intelligence?
+
+  - intent: ask_flight_status
+    examples: |
+      - What is the status of flight?
+      - whats todays flights status 
+      - Can you tell me the status of flight [BA456](flight_number)?
+      - Is flight [DL789](flight_number) on time?
+      - What's the update on flight [UA101](flight_number)?
+      - How is flight [LH789](flight_number) doing?
+      - What's the status of flight [AF123](flight_number)?
+      - Is flight [QR456](flight_number) delayed?
+      - Can you check the status of flight [EK789](flight_number)?
+      - Tell me about flight [SQ101](flight_number)?
+      - Do you have the status for flight [CX123](flight_number)?
+      - Can you get the status of flight [NYT301](flight_number)?
+      - I need the status of flight [BHA502](flight_number)
+      - What's happening with flight [STA602](flight_number)?
+      - Is flight [SHA601](flight_number) on schedule?
+
+  - intent: ask_gate_info
+    examples: |
+      - Where is the gate for flight [AA123](flight_number)?
+      - What gate is flight [BA456](flight_number) departing from?
+      - Can you tell me the gate for flight [DL789](flight_number)?
+      - Which gate do I need for flight [UA101](flight_number)?
+      - What gate should I go to for flight [LH789](flight_number)?
+      - Where can I find the gate for flight [AF123](flight_number)?
+      - Is gate [B12] for flight [QR456](flight_number)?
+      - What's the gate number for flight [EK789](flight_number)?
+      - Where do I board flight [SQ101](flight_number)?
+      - Which gate is assigned to flight [CX123](flight_number)?
+      - Can you tell me the gate for flight [NYT301](flight_number)?
+      - I need the gate information for flight [BHA502](flight_number)
+      - What's the gate for flight [STA602](flight_number)?
+      - Which gate should I go to for flight [SHA601](flight_number)?
+
+  - intent: ask_security_info
+    examples: |
+      - What are the security check requirements?
+      - How long is the security line?
+      - Do I need to remove my shoes at security?
+      - What items are prohibited in security?
+      - What's the wait time at security?
+      - Are liquids allowed through security?
+      - Can I bring a laptop through security?
+      - Is there a special line for families at security?
+      - Do I need a boarding pass for security?
+      - What are the TSA guidelines?
+      - What can I bring through security?
+      - Are there any restrictions on items for security?
+      - What items are allowed through security?
+      - Are there any prohibited items at security?
+      - Can I take my phone through security?
+
+  - intent: ask_lounge_info
+    examples: |
+      - Where is the airport lounge?
+      - How can I access the lounge?
+      - What facilities are available in the lounge?
+      - Is there a lounge in Terminal 1?
+      - Can I enter the lounge with my ticket?
+      - Is food provided in the lounge?
+      - Where is the first class lounge?
+      - Is there a shower in the lounge?
+      - How do I get to the lounge?
+      - What are the lounge hours?
+      - Are there any lounges available?
+      - Where can I find a lounge?
+      - Is there a lounge I can access?
+      - Are there any VIP lounges?
+      - Where is the lounge in Terminal 2?
+
+  - intent: ask_directions
+    examples: |
+      - How do I get to Terminal 2?
+      - Can you show me the way to the nearest restroom?
+      - Where is the check-in counter for Delta Airlines?
+      - How can I find the baggage claim area?
+      - Where is the nearest exit?
+      - How do I reach the security checkpoint?
+      - Can you direct me to the nearest elevator?
+      - Where can I find the taxi stand?
+      - How do I get to the parking lot?
+      - Can you guide me to the information desk?
+      - How do I get to Terminal 1?
+      - Can you show me the way to the boarding gate?
+      - Where is the lounge located?
+      - How can I find the lost and found desk?
+      - Where is the customs area?
+
+  - intent: check_flight_status
+    examples: |
+      
+      - What is the status of flight?
+      - Can you check the status for [Nepal Airlines](airline)?
+      - check flights status
+      - what is the status of flight [DL123](flight_number)?
+      - is flight [UA456](flight_number) on time?
+      - What's the flight status for [AF123](flight_numbere at security?
+      - Is the security line moving quickly?
+      - How busy is security right now?
+      - What's the queue like at security?
+      - How fast is security moving?
+      - How long is the wait at the security checkpoint?
+      - What's the security line like today?
+      - How crowded is security?
+
+  - intent: customs_location
+    examples: |
+      - Where do I go for customs and immigration?
+      - Where is the customs area?
+      - How do I get to immigration?
+      - Where is customs located?
+      - Can you guide me to customs?
+      - How do I reach the immigration desk?
+      - Where can I find customs?
+      - Where is the immigration office?
+      - Where should I go for customs checks?
+      - Where is the customs checkpoint?
+      - Where do I go for customs processing?
+      - How do I get to the customs area?
+      - Where is the immigration section?
+      - How do I find the customs office?
+      - Where is the customs inspection?
+
+  - intent: food_drinks
+    examples: |
+      - Where can I find food and drinks?
+      - Are there any restaurants here?
+      - Where can I get something to eat?
+      - Is there a food court in the airport?
+      - Where can I buy drinks?
+      - Are there any cafes in Terminal 1?
+      - Where are the dining options?
+      - Where can I get coffee?
+      - Is there a place to eat near Gate B12?
+      - Can you recommend a restaurant?
+      - Where are the eateries in the airport?
+      - Can I find a bar here?
+      - Is there a snack bar in the airport?
+      - Where can I get lunch in Terminal 2?
+      - Are there any vending machines around?
+
+  - intent: lounges
+    examples: |
+      - Are there any lounges available?
+      - Where can I find a lounge?
+      - Is there a lounge I can access?
+      - How do I get to the lounge?
+      - Are there any VIP lounges?
+      - Where is the first class lounge?
+      - Can I access the lounge with my ticket?
+      - Where are the lounges located?
+      - Is there a lounge in Terminal 3?
+      - How can I enter the airport lounge?
+      - Is there a lounge I can use?
+      - How do I get to the premium lounge?
+      - Where can I find the business lounge?
+      - Is there a lounge near my gate?
+      - What are the requirements to access the lounge?
+
+  - intent: wifi
+    examples: |
+      - Is there Wi-Fi available at the airport?
+      - How do I connect to Wi-Fi?
+      - Can I get internet access here?
+      - What's the Wi-Fi password?
+      - Is the Wi-Fi free?
+      - How do I access the airport Wi-Fi?
+      - Is there Wi-Fi in Terminal 2?
+      - How can I use the Wi-Fi here?
+      - Is there an internet connection available?
+      - What's the network name for the Wi-Fi?
+      - How do I get on the Wi-Fi?
+      - Is there wireless internet here?
+      - Can I use Wi-Fi at the gate?
+      - How do I log into the Wi-Fi?
+      - Is the Wi-Fi secure?
+
+  - intent: taxi_rideshare
+    examples: |
+      - Where can I find a taxi or rideshare service?
+      - How do I get a taxi?
+      - Is Uber available here?
+      - Where is the rideshare pickup?
+      - Can I get a Lyft at this airport?
+      - Where is the taxi stand?
+      - How do I book a rideshare?
+      - Where can I catch a taxi?
+      - Is there a rideshare service here?
+      - How do I get to the rideshare pickup area?
+      - Where can I find a cab?
+      - How do I request a rideshare?
+      - Is there a place to get a taxi?
+      - How do I find the Uber pickup spot?
+      - Where is the rideshare area?
+
+  - intent: parking_info
+    examples: |
+      - Where is the parking lot, and how much does it cost?
+      - What are the parking rates?
+      - How do I find parking?
+      - Where can I park my car?
+      - Is there long-term parking available?
+      - How much does parking cost per day?
+      - Where is the short-term parking area?
+      - Can I reserve a parking spot?
+      - How do I pay for parking?
+      - Where is the parking garage?
+      - Where can I park at the airport?
+      - Is there covered parking available?
+      - How do I access the parking lot?
+      - What's the daily rate for parking?
+      - Where is the valet parking service?
+
+  - intent: city_transport
+    examples: |
+      - How can I get to the city from the airport?
+      - What transportation options are available to the city?
+      - How do I get downtown?
+      - Is there a bus to the city center?
+      - Can I take a train to the city?
+      - What is the best way to get to the city?
+      - Are there shuttles to downtown?
+      - How much is a taxi to the city?
+      - Where can I catch public transport to the city?
+      - What's the fastest way to get to the city?
+      - How do I get from the airport to downtown?
+      - Are there any city buses from the airport?
+      - Is there a metro service to the city?
+      - Where can I find transport to the city center?
+      - How do I reach the city from here?
+
+  - intent: info_desk
+    examples: |
+      - Where is the information desk?
+      - How do I find the information desk?
+      - Is there an information counter?
+      - Can you direct me to the info desk?
+      - Where can I get information?
+      - Is there a help desk nearby?
+      - Where is the customer service desk?
+      - How do I reach the information desk?
+      - Where can I ask for information?
+      - Where is the airport information desk?
+      - Is there an information booth here?
+      - How do I contact the info desk?
+      - Where can I find the service desk?
+      - Is there a place to ask for help?
+      - How do I locate the information desk?
+
+  - intent: lost_found
+    examples: |
+      - Is there a lost and found?
+      - Where is the lost and found office?
+      - How do I report a lost item?
+      - I lost something, where can I find it?
+      - Where do I go for lost items?
+      - Can I report a lost item here?
+      - Is there a place for lost and found?
+      - How can I find my lost item?
+      - Where is the lost property office?
+      - What do I do if I lost something?
+      - Where can I report a missing item?
+      - How do I find lost and found?
+      - Is there a lost property desk?
+      - How do I retrieve a lost item?
+      - Where is the lost item office?
+
+  - intent: medical_facilities
+    examples: |
+      - Are there any medical facilities at routine finally hello uncommon the airport?
+      - Is there a first aid station here?
+      - What do I do in a medical emergency?
+      - Where can I find medical help?
+      - Is there a doctor at the airport?
+      - Where is the medical clinic?
+      - Can I get medical assistance here?
+      - Is there an emergency room at the airport?
+      - Where is the first aid room?
+      - How do I get medical help?
+      - Where is the airport medical center?
+      - Is there a health clinic in the airport?
+      - Where can I get first aid?
+      - Is there a nurse on duty?
+      - How do I find medical services?
+
+
+  - intent: boarding_pass
+    examples: |
+      - show my boarding pass
+      - display my boarding pass
+      - I need my boarding pass
+      - get my boarding pass
+      - fetch my boarding pass
+      - retrieve my boarding pass
+      - Where is my boarding pass?
+      - Can I see my boarding pass?
+      - Where can I find my boarding pass?
+      - Show me my boarding pass
+      - Can you get my boarding pass?
+      - Display my ticket
+      - I need to see my boarding pass
+      - Show me my ticket
+      - Where is my boarding pass located?
+
+  - intent: display_flight_information
+    examples: |
+      - Show me the flight information
+      - I want to see all flight details
+      - Display flight data
+      - Show all flight status
+      - Can you show me the flight information?
+
+  - intent: scan_qr_code
+    examples: |
+      - Scan my QR code
+      - I want to scan a QR code
+      - Please scan this QR code
+      - Scan this code for me
+
+  - intent: ask_for_gate
+    examples: |
+      - Take me to gate 1
+      - I need directions to gate A
+      - Where is gate 2?
+
+  - intent: ask_for_terminal
+    examples: |
+      - How do I get to the terminal?
+      - Show me the way to the terminal
+
+  - intent: ask_for_boarding_gate
+    examples: |
+      - Where is the boarding gate?
+      - Direct me to the boarding gate
+
+  - intent: ask_for_toilet
+    examples: |
+      - Where is the nearest toilet?
+      - I need directions to the toilet

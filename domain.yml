@@ -1,0 +1,199 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - affirm
+  - deny
+  - ask_flight_status
+  - ask_gate_info
+  - ask_security_info
+  - ask_lounge_info
+  - ask_directions
+  - check_in_info
+  - flight_status
+  - arrival_time
+  - boarding_gate
+  - baggage_claim
+  - lost_baggage
+  - baggage_restrictions
+  - security_items
+  - security_wait
+  - customs_location
+  - food_drinks
+  - lounges
+  - wifi
+  - taxi_rideshare
+  - parking_info
+  - city_transport
+  - info_desk
+  - lost_found
+  - medical_facilities
+  - airline_status
+  - scan_qr_code
+  - check_flight_status
+  - check_airline_status
+  - display_flight_information
+  - ask_for_gate
+  - ask_for_terminal
+  - ask_for_boarding_gate
+  - ask_for_toilet
+
+actions:
+  - action_navigate_to_location
+  - action_display_flight_information
+  - action_check_flight_status
+  - action_provide_gate_info
+  - action_provide_security_info
+  - action_provide_lounge_info
+  - action_provide_directions
+  - action_check_airline_status
+  - action_check_in
+  - action_scan_qr_code
+  - utter_check_in_info
+  - utter_arrival_time
+  - utter_boarding_gate
+  - utter_baggage_claim
+  - utter_lost_baggage
+  - utter_baggage_restrictions
+  - utter_security_items
+  - utter_security_wait
+  - utter_customs_location
+  - utter_food_drinks
+  - utter_lounges
+  - utter_wifi
+  - utter_taxi_rideshare
+  - utter_parking_info
+  - utter_city_transport
+  - utter_info_desk
+  - utter_lost_found
+  - utter_medical_facilities
+  - utter_flight_status
+  - utter_goodbye
+  - utter_greet
+  - utter_bot_challenge
+  - utter_affirm
+  - utter_deny
+  - utter_anything_else
+  - utter_how_can_i_help
+
+slots:
+  flight_number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+
+  airline:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+
+responses:
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand that."
+
+  utter_ask_for_gate:
+    - text: "I can help with that. Starting navigation to gate 1."
+
+  utter_ask_for_terminal:
+    - text: "I will assist you to the terminal. Starting navigation."
+
+  utter_ask_for_boarding_gate:
+    - text: "I will guide you to the boarding gate. Please wait."
+
+  utter_ask_for_toilet:
+    - text: "I'll direct you to the nearest washroom."
+  
+  utter_greet:
+    - text: "Hello! How can I assist you today? 😊"
+
+  utter_goodbye:
+    - text: "Goodbye! Safe travels and have a wonderful day ahead! ✈️"
+
+  utter_flight_status:
+    - text: "You can check your flight status on our website [Softair Airlines](http://localhost:3000/) or at the information desk. Can I help you with anything else?"
+
+  utter_arrival_time:
+    - text: "For arrival time, please check the flight information display. Is there anything else I can assist you with?"
+
+  utter_boarding_gate:
+    - text: "Your boarding gate information is displayed on the flight information monitors. Anything else you need to know?"
+
+  utter_baggage_claim:
+    - text: "Please follow the signs to the baggage claim area. Need help with anything else?"
+
+  utter_lost_baggage:
+    - text: "If you've lost your baggage, please visit the lost and found desk. Can I help you with something else?"
+
+  utter_baggage_restrictions:
+    - text: "Baggage restrictions are detailed on our website. Do you have any other questions?"
+
+  utter_security_items:
+    - text: "Security items must be declared at the checkpoint. Anything else you need help with?"
+
+  utter_security_wait:
+    - text: "Security wait times can vary. Please arrive early. Need any more assistance?"
+
+  utter_customs_location:
+    - text: "Customs and immigration are located in the arrivals area. Anything else you need to know?"
+
+  utter_food_drinks:
+    - text: "Food and drinks are available in various terminals. Can I help you with something else?"
+
+  utter_lounges:
+    - text: "Airport lounges are located in terminals A and B. Do you need any other information?"
+
+  utter_wifi:
+    - text: "Free Wi-Fi is available throughout the airport. Username: kathmandu123, Password: Nepal123. Need help with anything else?"
+
+  utter_taxi_rideshare:
+    - text: "Taxi and rideshare services are available at the curbside. Anything else you need to know?"
+
+  utter_parking_info:
+    - text: "Parking information can be found on our website. Can I assist you with anything else?"
+
+  utter_city_transport:
+    - text: "City transport options include buses, trains, and shuttles. Need any more information?"
+
+  utter_info_desk:
+    - text: "Information desks are located in each terminal. Can I help you with something else?"
+
+  utter_lost_found:
+    - text: "Lost and found services are available at the main terminal. Anything else you need help with?"
+
+  utter_medical_facilities:
+    - text: "Medical facilities are located in terminal C. Need any more assistance?"
+
+  utter_check_in_info:
+    - text: "Here's how you can check-in. Do you need help with anything else?"
+
+  utter_bot_challenge:
+    - text: "I am an AI chatbot, here to assist you with airport information. How can I help you today?"
+
+  utter_affirm:
+    - text: "Yes, that's correct! Anything else you need to know?"
+
+  utter_deny:
+    - text: "I'm sorry, I cannot assist with that request. Is there something else you need help with?"
+
+  utter_scan_qr_code:
+    - text: "Scanning QR code now... Please hold your code steady."
+
+  utter_boarding_pass:
+    - text: "Fetching your boarding pass... Just a moment."
+
+  utter_anything_else:
+    - text: "Is there anything else I can assist you with?"
+
+  utter_how_can_i_help:
+    - text: "How else can I assist you today?"
+
+  utter_directions:
+    - text: "Follow the signs to Terminal 2. It is a 5-minute walk from here."
+
+  utter_ask_flight_number:
+    - text: "Please provide a flight number or visit our website for flight details: [Softair Airlines](http://localhost:3000/)"

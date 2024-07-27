@@ -1,0 +1,245 @@
+{
+    "flights": [
+      {
+        "airlines": "Yeti Airlines",
+        "scheduled_time_of_arrival": "7:05:00",
+        "estimated_time_of_arrival": "7:05:00",
+        "flight": "NYT301",
+        "origin": "Mountain Flight",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Shree Airlines",
+        "scheduled_time_of_arrival": "7:05:00",
+        "estimated_time_of_arrival": "7:05:00",
+        "flight": "SHA601",
+        "origin": "Mountain Flight",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Sita Air",
+        "scheduled_time_of_arrival": "7:05:00",
+        "estimated_time_of_arrival": "7:05:00",
+        "flight": "STA602",
+        "origin": "Lukla",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:15:00",
+        "estimated_time_of_arrival": "7:15:00",
+        "flight": "BHA100",
+        "origin": "Mountain Flight",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:15:00",
+        "estimated_time_of_arrival": "7:15:00",
+        "flight": "BHA200",
+        "origin": "Mountain Flight",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:15:00",
+        "estimated_time_of_arrival": "7:15:00",
+        "flight": "BHA300",
+        "origin": "Mountain Flight",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:15:00",
+        "estimated_time_of_arrival": "7:15:00",
+        "flight": "BHA500",
+        "origin": "Mountain Flight",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Tara Air",
+        "scheduled_time_of_arrival": "7:20:00",
+        "estimated_time_of_arrival": "7:20:00",
+        "flight": "TRA112",
+        "origin": "Lukla",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:25:00",
+        "estimated_time_of_arrival": "7:25:00",
+        "flight": "BHA670",
+        "origin": "Pokhara",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Summit Air",
+        "scheduled_time_of_arrival": "7:35:00",
+        "estimated_time_of_arrival": "7:35:00",
+        "flight": "SMA302",
+        "origin": "Lukla",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:40:00",
+        "estimated_time_of_arrival": "7:40:00",
+        "flight": "BHA380",
+        "origin": "Bharatpur",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Shree Airlines",
+        "scheduled_time_of_arrival": "7:45:00",
+        "estimated_time_of_arrival": "7:45:00",
+        "flight": "SHA440",
+        "origin": "Nepalgunj",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:50:00",
+        "estimated_time_of_arrival": "7:50:00",
+        "flight": "BHA664",
+        "origin": "Pokhara",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "7:50:00",
+        "estimated_time_of_arrival": "7:50:00",
+        "flight": "BHA806",
+        "origin": "Bhairahawa",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Shree Airlines",
+        "scheduled_time_of_arrival": "7:55:00",
+        "estimated_time_of_arrival": "7:55:00",
+        "flight": "SHA228",
+        "origin": "Dhangadhi",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "8:05:00",
+        "estimated_time_of_arrival": "8:05:00",
+        "flight": "BHA552",
+        "origin": "Simara Airport",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Yeti Airlines",
+        "scheduled_time_of_arrival": "8:10:00",
+        "estimated_time_of_arrival": "8:10:00",
+        "flight": "NYT690",
+        "origin": "Pokhara",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Yeti Airlines",
+        "scheduled_time_of_arrival": "8:15:00",
+        "estimated_time_of_arrival": "8:15:00",
+        "flight": "NYT882",
+        "origin": "Bhairahawa",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "8:20:00",
+        "estimated_time_of_arrival": "8:20:00",
+        "flight": "BHA608",
+        "origin": "Pokhara",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "8:20:00",
+        "estimated_time_of_arrival": "8:20:00",
+        "flight": "BHA804",
+        "origin": "Bhairahawa",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Nepal Airlines",
+        "scheduled_time_of_arrival": "8:20:00",
+        "estimated_time_of_arrival": "8:20:00",
+        "flight": "RA178",
+        "origin": "Resunga",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "8:30:00",
+        "estimated_time_of_arrival": "8:30:00",
+        "flight": "BHA352",
+        "origin": "Bharatpur",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Tara Air",
+        "scheduled_time_of_arrival": "8:55:00",
+        "estimated_time_of_arrival": "8:55:00",
+        "flight": "TRA114",
+        "origin": "Lukla",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "9:00:00",
+        "estimated_time_of_arrival": "9:00:00",
+        "flight": "BHA502",
+        "origin": "Janakpur",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Yeti Airlines",
+        "scheduled_time_of_arrival": "9:00:00",
+        "estimated_time_of_arrival": "9:00:00",
+        "flight": "NYT532",
+        "origin": "Simara Airport",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Shree Airlines",
+        "scheduled_time_of_arrival": "9:00:00",
+        "estimated_time_of_arrival": "9:00:00",
+        "flight": "SHA122",
+        "origin": "Surkhet",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Shree Airlines",
+        "scheduled_time_of_arrival": "9:00:00",
+        "estimated_time_of_arrival": "9:00:00",
+        "flight": "SHA732",
+        "origin": "Biratnagar",
+        "status": "Landed"
+      },
+      {
+        "airlines": "Buddha Air",
+        "scheduled_time_of_arrival": "9:05:00",
+        "estimated_time_of_arrival": "9:05:00",
+        "flight": "BHA604",
+        "origin": "Pokhara",
+        "status": "On Time"
+      },
+      {
+        "airlines": "Sita Air",
+        "scheduled_time_of_arrival": "9:05:00",
+        "estimated_time_of_arrival": "9:05:00",
+        "flight": "STA622",
+        "origin": "Lukla",
+        "status": "Delayed"
+      },
+      {
+        "airlines": "Nepal Airlines",
+        "scheduled_time_of_arrival": "9:15:00",
+        "estimated_time_of_arrival": "9:15:00",
+        "flight": "RA332",
+        "origin": "Janakpur",
+        "status": "Landed"
+      }
+    ]
+  }
+  

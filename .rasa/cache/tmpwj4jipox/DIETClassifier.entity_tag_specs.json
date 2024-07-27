@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-flight_number",
+      "2": "I-flight_number",
+      "3": "L-flight_number",
+      "4": "U-flight_number",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-flight_number": 1,
+      "I-flight_number": 2,
+      "L-flight_number": 3,
+      "U-flight_number": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

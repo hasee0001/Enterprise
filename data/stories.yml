@@ -1,0 +1,164 @@
+version: "3.1"
+
+stories:
+  - story: User asks for flight status
+    steps:
+      - intent: ask_flight_status
+      - action: action_check_flight_status
+      - action: utter_flight_status
+
+  - story: User asks for gate information
+    steps:
+      - intent: ask_gate_info
+      - action: action_provide_gate_info
+
+  - story: User asks for security information
+    steps:
+      - intent: ask_security_info
+      - action: action_provide_security_info
+
+  - story: User asks for lounge information
+    steps:
+      - intent: ask_lounge_info
+      - action: action_provide_lounge_info
+
+  - story: User asks for directions
+    steps:
+      - intent: ask_directions
+      - action: action_provide_directions
+
+  - story: User checks in
+    steps:
+      - intent: check_in_info
+      - action: action_check_in
+      - action: utter_check_in_info
+
+  - story: User inquires about arrival time
+    steps:
+      - intent: arrival_time
+      - action: utter_arrival_time
+
+  - story: User asks for boarding gate
+    steps:
+      - intent: boarding_gate
+      - action: utter_boarding_gate
+
+  - story: User wants baggage claim info
+    steps:
+      - intent: baggage_claim
+      - action: utter_baggage_claim
+
+  - story: User reports lost baggage
+    steps:
+      - intent: lost_baggage
+      - action: utter_lost_baggage
+
+  - story: User asks about baggage restrictions
+    steps:
+      - intent: baggage_restrictions
+      - action: utter_baggage_restrictions
+
+  - story: User inquires about security items
+    steps:
+      - intent: security_items
+      - action: utter_security_items
+
+  - story: User asks about security wait time
+    steps:
+      - intent: security_wait
+      - action: utter_security_wait
+
+  - story: User asks about customs and immigration
+    steps:
+      - intent: customs_location
+      - action: utter_customs_location
+
+  - story: User asks about food and drinks
+    steps:
+      - intent: food_drinks
+      - action: utter_food_drinks
+
+  - story: User asks about lounges
+    steps:
+      - intent: lounges
+      - action: utter_lounges
+
+  - story: User asks about Wi-Fi
+    steps:
+      - intent: wifi
+      - action: utter_wifi
+
+  - story: User inquires about taxi or rideshare
+    steps:
+      - intent: taxi_rideshare
+      - action: utter_taxi_rideshare
+
+  - story: User wants parking information
+    steps:
+      - intent: parking_info
+      - action: utter_parking_info
+
+  - story: User asks about city transport
+    steps:
+      - intent: city_transport
+      - action: utter_city_transport
+
+  - story: User seeks information desk location
+    steps:
+      - intent: info_desk
+      - action: utter_info_desk
+
+  - story: User reports lost item
+    steps:
+      - intent: lost_found
+      - action: utter_lost_found
+
+  - story: User inquires about medical facilities
+    steps:
+      - intent: medical_facilities
+      - action: utter_medical_facilities
+
+  - story: scan QR code
+    steps:
+      - intent: scan_qr_code
+      - action: action_scan_qr_code
+
+  - story: check flight status
+    steps:
+      - intent: check_flight_status
+        entities:
+          - flight_number: "BHA200"
+      - action: action_check_flight_status
+
+  - story: check airline status
+    steps:
+      - intent: check_airline_status
+        entities:
+          - airline: "Buddha Air"
+      - action: action_check_airline_status
+
+  - story: display flight information
+    steps:
+      - intent: display_flight_information
+      - action: action_display_flight_information
+
+
+  - story: Navigate to gate
+    steps:
+      - intent: ask_for_gate
+      - action: action_navigate_to_location
+
+  - story: Navigate to terminal
+    steps:
+      - intent: ask_for_terminal
+      - action: action_navigate_to_location
+
+  - story: Navigate to boarding gate
+    steps:
+      - intent: ask_for_boarding_gate
+      - action: action_navigate_to_location
+
+  - story: Navigate to washroom
+    steps:
+      - intent: ask_for_toilet
+      - action: action_navigate_to_location

@@ -1,0 +1,179 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge
+
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Affirm
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - rule: Deny
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - rule: Ask flight status
+    steps:
+      - intent: ask_flight_status
+      - action: action_check_flight_status
+      - action: utter_flight_status
+
+  - rule: Ask gate info
+    steps:
+      - intent: ask_gate_info
+      - action: action_provide_gate_info
+
+  - rule: Ask security info
+    steps:
+      - intent: ask_security_info
+      - action: action_provide_security_info
+
+  - rule: Ask lounge info
+    steps:
+      - intent: ask_lounge_info
+      - action: action_provide_lounge_info
+
+  - rule: Ask directions
+    steps:
+      - intent: ask_directions
+      - action: action_provide_directions
+
+  - rule: Check-in Information
+    steps:
+      - intent: check_in_info
+      - action: action_check_in
+      - action: utter_check_in_info
+
+  - rule: Flight Status
+    steps:
+      - intent: flight_status
+      - action: utter_flight_status
+
+  - rule: Arrival Time
+    steps:
+      - intent: arrival_time
+      - action: utter_arrival_time
+
+  - rule: Boarding Gate
+    steps:
+      - intent: boarding_gate
+      - action: utter_boarding_gate
+
+  - rule: Baggage Claim
+    steps:
+      - intent: baggage_claim
+      - action: utter_baggage_claim
+
+  - rule: Lost Baggage
+    steps:
+      - intent: lost_baggage
+      - action: utter_lost_baggage
+
+  - rule: Baggage Restrictions
+    steps:
+      - intent: baggage_restrictions
+      - action: utter_baggage_restrictions
+
+  - rule: Security Items
+    steps:
+      - intent: security_items
+      - action: utter_security_items
+
+  - rule: Security Wait
+    steps:
+      - intent: security_wait
+      - action: utter_security_wait
+
+  - rule: Customs and Immigration
+    steps:
+      - intent: customs_location
+      - action: utter_customs_location
+
+  - rule: Food and Drinks
+    steps:
+      - intent: food_drinks
+      - action: utter_food_drinks
+
+  - rule: Lounges
+    steps:
+      - intent: lounges
+      - action: utter_lounges
+
+  - rule: Wi-Fi
+    steps:
+      - intent: wifi
+      - action: utter_wifi
+
+  - rule: Taxi and Rideshare
+    steps:
+      - intent: taxi_rideshare
+      - action: utter_taxi_rideshare
+
+  - rule: Parking Info
+    steps:
+      - intent: parking_info
+      - action: utter_parking_info
+
+  - rule: City Transport
+    steps:
+      - intent: city_transport
+      - action: utter_city_transport
+
+  - rule: Information Desk
+    steps:
+      - intent: info_desk
+      - action: utter_info_desk
+
+  - rule: Lost and Found
+    steps:
+      - intent: lost_found
+      - action: utter_lost_found
+
+  - rule: Medical Facilities
+    steps:
+      - intent: medical_facilities
+      - action: utter_medical_facilities
+
+  - rule: Airline Status
+    steps:
+      - intent: airline_status
+      - action: action_check_airline_status
+
+  - rule: Scan QR code
+    steps:
+      - intent: scan_qr_code
+      - action: action_scan_qr_code
+
+  - rule: Handle gate request
+    steps:
+      - intent: ask_for_gate
+      - action: action_navigate_to_location
+
+  - rule: Handle terminal request
+    steps:
+      - intent: ask_for_terminal
+      - action: action_navigate_to_location
+
+  - rule: Handle boarding gate request
+    steps:
+      - intent: ask_for_boarding_gate
+      - action: action_navigate_to_location
+
+  - rule: Handle toilet request
+    steps:
+      - intent: ask_for_toilet
+      - action: action_navigate_to_location
